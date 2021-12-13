@@ -354,7 +354,7 @@ ul#nav li.current a { color: #F06000; }
    padding-bottom: 6px;
 }
 #publication h3 {
-   font: 18px/30px 'opensans-bold', sans-serif;
+   font: 16px/30px 'opensans-bold', sans-serif;
    margin-top: 10px;
 }
 
@@ -367,7 +367,7 @@ ul#nav li.current a { color: #F06000; }
    border-bottom: 1px solid #E8E8E8;
 }
 #publication .author {
-   font: 16px/24px 'librebaskerville', serif;
+   font: 16px/24px 'opensans', serif;
    color: #000;
    margin-bottom: 5px;
    margin-top: 5px;
