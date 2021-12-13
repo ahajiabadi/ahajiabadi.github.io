@@ -367,13 +367,13 @@ ul#nav li.current a { color: #F06000; }
    border-bottom: 1px solid #E8E8E8;
 }
 #publication .author {
-   font: 16px/24px 'opensans', sans-serif;
+   font: 15px/24px 'opensans', sans-serif;
    color: #000;
    margin-bottom: 5px;
    margin-top: 5px;
 }
 #publication .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
+   font: 15px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 5px;
    margin-top: 5px;
