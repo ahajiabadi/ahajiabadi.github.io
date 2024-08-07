@@ -19,6 +19,7 @@
 	month = jun,
 	year = {2024},
 	abbr = {DAC'24},
+	code = {https://github.com/Compiler-Dependency-Analysis/llvm-levioso},
 	selected={true},
 	abstract = {Spectre-type attacks have exposed a major class of vulnerabilities arising from speculative execution of instructions, the main performance enabler of modern CPUs. These attacks speculatively leak secrets that have been either speculatively loaded (seen in sandboxed programs) or non-speculatively loaded (seen in constant-time programs). Various hardware-only defenses have been proposed to mitigate both speculative and non-speculative secrets via all potential transmission channels. However, limited program knowledge is exposed to the hardware and these solutions conservatively restrict the execution of all instructions that can potentially leak.
 	In this work, we show that not all instructions depend on older unresolved branches and they can safely execute without leaking speculative information. We present Levioso, a novel hardware/software co-design, that provides comprehensive secure speculation guarantees while reducing performance overhead compared to existing defenses. Levioso informs the hardware about true branch dependencies and applies restrictions only when necessary. Our evaluations demonstrate that Levioso is able to significantly reduce the performance overhead compared to two prior defenses from 51% and 43% to just 23%.}
@@ -32,6 +33,7 @@
 	month = mar,
 	year = {2024},
 	abbr = {HPCA'24},
+	code = {https://zenodo.org/records/10100971},
 	selected={true},
 	annotation = {* Equal contribution first-authors},
 	abstract = {Transient execution attacks constitute a major class of attacks affecting all modern out-of-order CPUs. These attacks exploit transient execution windows (i.e., the instructions that execute but never commit) to leak confidential information from victims. Existing attacks either rely on branch mispredictions, incorrect memory speculation, or deferred exception handling to create transient windows. In this work, we introduce a new transient execution primitive, called GadgetSpinner. We exploit the Loop Stream Detector (LSD) in Intel processors to perform out-of-loop-bounds execution and perform illegal operations.
@@ -46,6 +48,7 @@
 	month = mar,
 	year = {2024},
 	abbr = {HPCA'24},
+	code = {https://zenodo.org/records/10118346},
 	abstract = {n this paper, we reveal the existence of a new class of prefetcher, the XPT prefetcher, in modern Intel processors which has never been officially detailed. It speculatively issues a load, bypassing last-level cache (LLC) lookups, when it predicts that a load request will result in an LLC miss. We demonstrate that XPT prefetcher is shared among different cores, which enables an attacker to build cross-core side-channel and covert-channel attacks. We propose PrefetchX, a cross-core attack mechanism, to leak users’ sensitive data and activities.
 	We empirically demonstrate that PrefetchX can be used to extract private keys of real-world RSA applications. Furthermore, we show that PrefetchX can enable side-channel attacks that can monitor keystrokes and network traffic patterns of users. Our two cross-core covert-channel attacks also see a low error rate and a 122 KiB/s maximum channel capacity. Due to the cache-independent feature of PrefetchX, current cache-based mitigations are not effective against our attacks. Overall, our work uncovers a significant vulnerability in the XPT prefetcher, which can be exploited to compromise the confidentiality of sensitive information in both cryptography and non-cryptography-related applications among processor cores.}
 }
@@ -70,6 +73,7 @@
 	month = nov,
 	year = {2022},
 	abbr = {ICCAD'22},
+	code = {https://github.com/Spectify-Detector/Spectify},
 	abstract = {Modern processors achieve high performance and efficiency by employing techniques such as speculative execution and sharing resources such as caches. However, recent attacks like Spectre and Meltdown exploit the speculative execution of modern processors to leak sensitive information from the system. Many mitigation strategies have been proposed to restrict the speculative execution of processors and protect potential side-channels. Currently, these techniques have shown a significant performance overhead. A solution that can detect memory leaks before the attacker has a chance to exploit them would allow the processor to reduce the performance overhead by enabling protections only when the system is at risk.
 	In this paper, we propose a mechanism to detect speculative execution attacks that use caches as a side-channel. In this detector we track the phases of a successful attack and raise an alert before the attacker gets a chance to recover sensitive information. We accomplish this through monitoring the microarchitectural changes in the core and caches, and detect the memory locations that can be potential memory data leaks. We achieve 100% accuracy and negligible false positive rate in detecting Spectre attacks and evasive versions of Spectre that the state-of-the-art detectors are unable to detect. Our detector has no performance overhead with negligible power and area overheads.}
 }
@@ -95,6 +99,7 @@
 	month = mar,
 	year = {2021},
 	abbr = {CGO'21},
+	code = {https://github.com/intel/pinball2elf},
 	abstract = {We address the challenge faced in characterizing long-running workloads, namely how to reliably focus the detailed analysis on interesting execution regions. We present a set of tools that allows users to precisely capture any region of interest in program execution, and create a stand-alone executable, called an ELFie, from it. An ELFie starts with the same program state captured at the beginning of the region of interest and then executes natively. With ELFies, there is no fast-forwarding to the region of interest needed or the uncertainty of reaching the region. ELFies can be fed to dynamic program-analysis tools or simulators that work with regular program binaries. Our tool-chain is based on the PinPlay framework and requires no special hardware, operating system changes, re-compilation, or re-linking of test programs. This paper describes the design of our ELFie generation tool-chain and the application of ELFies in performance analysis and simulation of regions of interest in popular long-running single and multi-threaded benchmarks.}
 }
 
