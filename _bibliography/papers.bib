@@ -6,6 +6,7 @@
 	month = apr,
 	year = {2021},
 	abbr = {ASPLOS'21},
+	selected={true},
 	abstract = {Modern superscalar processors execute instructions out-of-order, but commit them in program order to provide precise exception handling and safe instruction retirement. However, in-order instruction commit is highly conservative and holds on to critical resources far longer than necessary, severely limiting the reach of general-purpose processors, ultimately reducing performance. Solutions that allow for efficient, early reclamation of these critical resources could seize the opportunity to improve performance. One such solution is out-of-order commit, which has traditionally been challenging due to inefficient, complex hardware used to guarantee safe instruction retirement and provide precise exception handling.
 	In this work, we present NOREBA, a processor for Non-speculative Out-of-order REtirement via Branch Reconvergence Analysis. In NOREBA, we enable non-speculative out-of-order commit and resource reclamation in a light-weight manner, improving performance and efficiency. We accomplish this through a combination of (1) automatic compiler annotation of true branch dependencies, and (2) an efficient re-design of the reorder buffer from traditional processors. By exploiting compiler branch dependency information, this system achieves 95% of the performance of aggressive, speculative solutions, without any additional speculation, and while maintaining energy efficiency.}
 }
@@ -65,6 +66,7 @@
 	month = jun,
 	year = {2024},
 	abbr = {DAC'24},
+	selected={true},
 	abstract = {In this work, we propose a new attack called Conjuring that exploits one of the main features of CPUs’ frontend: speculative fetch of instructions. We show that the Pattern History Table (PHT) in modern CPUs are a great channel to learn and leak control flow of victim applications. Unlike prior work, Conjuring does not require that one primes the PHT or interferes with the victim execution enabling a realistic and unprivileged attacker to leak control flow information. By improving the branch predictors, our attack becomes even more serious and practical. We demonstrate the feasibility of our attack on different existing Intel, AMD, and Apple CPUs.}
 }
 
@@ -76,6 +78,7 @@
 	month = jun,
 	year = {2024},
 	abbr = {DAC'24},
+	selected={true},
 	abstract = {Spectre-type attacks have exposed a major class of vulnerabilities arising from speculative execution of instructions, the main performance enabler of modern CPUs. These attacks speculatively leak secrets that have been either speculatively loaded (seen in sandboxed programs) or non-speculatively loaded (seen in constant-time programs). Various hardware-only defenses have been proposed to mitigate both speculative and non-speculative secrets via all potential transmission channels. However, limited program knowledge is exposed to the hardware and these solutions conservatively restrict the execution of all instructions that can potentially leak.
 	In this work, we show that not all instructions depend on older unresolved branches and they can safely execute without leaking speculative information. We present Levioso, a novel hardware/software co-design, that provides comprehensive secure speculation guarantees while reducing performance overhead compared to existing defenses. Levioso informs the hardware about true branch dependencies and applies restrictions only when necessary. Our evaluations demonstrate that Levioso is able to significantly reduce the performance overhead compared to two prior defenses from 51% and 43% to just 23%.}
 }
@@ -88,6 +91,7 @@
 	month = mar,
 	year = {2024},
 	abbr = {HPCA'24},
+	selected={true},
 	annotation = {* Equal contribution first-authors},
 	abstract = {Transient execution attacks constitute a major class of attacks affecting all modern out-of-order CPUs. These attacks exploit transient execution windows (i.e., the instructions that execute but never commit) to leak confidential information from victims. Existing attacks either rely on branch mispredictions, incorrect memory speculation, or deferred exception handling to create transient windows. In this work, we introduce a new transient execution primitive, called GadgetSpinner. We exploit the Loop Stream Detector (LSD) in Intel processors to perform out-of-loop-bounds execution and perform illegal operations.
 	Our key observation is that the LSD holds on to an old copy of branch predictions from the first iteration of the loop and keeps using this copy until a branch misprediction occurs, i.e., advances beyond the loop bound. We exploit the delay between the speculative iteration of the loop and when the branch misprediction is resolved. In this paper, we analyze the transient execution of the LSD and perform end-to-end attacks to (1) perform illegal reads from protected memory regions, (2) bypass Intel SGX and extract the weights of a trained CNN model in DNNL library, (3) break Kernel ASLR (KASLR), and finally (4) perform cross-core/cross-process attacks. We also show that many defenses for prior transient execution attacks, like secure Branch Prediction Unit (BPU) designs, fail to protect against GadgetSpinner.}
