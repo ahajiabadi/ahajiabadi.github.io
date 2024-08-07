@@ -1,3 +1,15 @@
+@inproceedings{hajiabadi_noreba_2021,
+	title = {{NOREBA: A Compiler-Informed Non-speculative Out-of-Order Commit Processor}}, 
+	pdf = {https://dl.acm.org/doi/pdf/10.1145/3445814.3446726},
+	booktitle = {{Proceedings of 26th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2021)}},
+        author = {Hajiabadi, Ali and Diavastos, Andreas and Carlson, Trevor E.},
+	month = apr,
+	year = {2021},
+	abbr = {ASPLOS'21},
+	abstract = {Modern superscalar processors execute instructions out-of-order, but commit them in program order to provide precise exception handling and safe instruction retirement. However, in-order instruction commit is highly conservative and holds on to critical resources far longer than necessary, severely limiting the reach of general-purpose processors, ultimately reducing performance. Solutions that allow for efficient, early reclamation of these critical resources could seize the opportunity to improve performance. One such solution is out-of-order commit, which has traditionally been challenging due to inefficient, complex hardware used to guarantee safe instruction retirement and provide precise exception handling.
+	In this work, we present NOREBA, a processor for Non-speculative Out-of-order REtirement via Branch Reconvergence Analysis. In NOREBA, we enable non-speculative out-of-order commit and resource reclamation in a light-weight manner, improving performance and efficiency. We accomplish this through a combination of (1) automatic compiler annotation of true branch dependencies, and (2) an efficient re-design of the reorder buffer from traditional processors. By exploiting compiler branch dependency information, this system achieves 95% of the performance of aggressive, speculative solutions, without any additional speculation, and while maintaining energy efficiency.}
+}
+
 @inproceedings{patil_elfies_2021,
 	title = {{ELFies: Executable Region Checkpoints for Performance Analysis and Simulation}}, 
 	pdf = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9370340},
@@ -19,18 +31,6 @@
 	abbr = {TOCS'21},
 	abstract = {Graphics Processing Units (GPUs) employ large register files to accommodate all active threads and accelerate context switching. Unfortunately, register files are a scalability bottleneck for future GPUs due to long access latency, high power consumption, and large silicon area provisioning. Prior work proposes hierarchical register file to reduce the register file power consumption by caching registers in a smaller register file cache. Unfortunately, this approach does not improve register access latency due to the low hit rate in the register file cache.
 	In this paper, we propose the Latency-Tolerant Register File (LTRF) architecture to achieve low latency in a two-level hierarchical structure while keeping power consumption low. We observe that compile-time interval analysis enables us to divide GPU program execution into intervals with an accurate estimate of a warp’s aggregate register working-set within each interval. The key idea of LTRF is to prefetch the estimated register working-set from the main register file to the register file cache under software control, at the beginning of each interval, and overlap the prefetch latency with the execution of other warps. We observe that register bank conflicts while prefetching the registers could greatly reduce the effectiveness of LTRF. Therefore, we devise a compile-time register renumbering technique to reduce the likelihood of register bank conflicts. Our experimental results show that LTRF enables high-capacity yet long-latency main GPU register files, paving the way for various optimizations. As an example optimization, we implement the main register file with emerging high-density high-latency memory technologies, enabling 8× larger capacity and improving overall GPU performance by 34%.}
-}
-
-@inproceedings{hajiabadi_noreba_2021,
-	title = {{NOREBA: A Compiler-Informed Non-speculative Out-of-Order Commit Processor}}, 
-	pdf = {https://dl.acm.org/doi/pdf/10.1145/3445814.3446726},
-	booktitle = {{Proceedings of 26th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2021)}},
-        author = {Hajiabadi, Ali and Diavastos, Andreas and Carlson, Trevor E.},
-	month = apr,
-	year = {2021},
-	abbr = {ASPLOS'21},
-	abstract = {Modern superscalar processors execute instructions out-of-order, but commit them in program order to provide precise exception handling and safe instruction retirement. However, in-order instruction commit is highly conservative and holds on to critical resources far longer than necessary, severely limiting the reach of general-purpose processors, ultimately reducing performance. Solutions that allow for efficient, early reclamation of these critical resources could seize the opportunity to improve performance. One such solution is out-of-order commit, which has traditionally been challenging due to inefficient, complex hardware used to guarantee safe instruction retirement and provide precise exception handling.
-	In this work, we present NOREBA, a processor for Non-speculative Out-of-order REtirement via Branch Reconvergence Analysis. In NOREBA, we enable non-speculative out-of-order commit and resource reclamation in a light-weight manner, improving performance and efficiency. We accomplish this through a combination of (1) automatic compiler annotation of true branch dependencies, and (2) an efficient re-design of the reorder buffer from traditional processors. By exploiting compiler branch dependency information, this system achieves 95% of the performance of aggressive, speculative solutions, without any additional speculation, and while maintaining energy efficiency.}
 }
 
 @inproceedings{pashrashid_spectify_2022,
@@ -65,8 +65,8 @@
 	month = mar,
 	year = {2024},
 	abbr = {HPCA'24},
-	abstract = {n this paper, we reveal the existence of a new class of prefetcher, the XPT prefetcher, in modern Intel processors which has never been officially detailed. It speculatively issues a load, bypassing last-level cache (LLC) lookups, when it predicts that a load request will result in an LLC miss. We demonstrate that XPT prefetcher is shared among different cores, which enables an attacker to build cross-core side-channel and covert- channel attacks. We propose PrefetchX, a cross-core attack mechanism, to leak users’ sensitive data and activities.
-	We empirically demonstrate that PrefetchX can be used to extract private keys of real-world RSA applications. Fur- thermore, we show that PrefetchX can enable side-channel attacks that can monitor keystrokes and network traffic patterns of users. Our two cross-core covert-channel attacks also see a low error rate and a 122 KiB/s maximum channel capacity. Due to the cache-independent feature of PrefetchX, current cache-based mitigations are not effective against our attacks. Overall, our work uncovers a significant vulnerability in the XPT prefetcher, which can be exploited to compromise the confidentiality of sensitive information in both cryptography and non-cryptography-related applications among processor cores.}
+	abstract = {n this paper, we reveal the existence of a new class of prefetcher, the XPT prefetcher, in modern Intel processors which has never been officially detailed. It speculatively issues a load, bypassing last-level cache (LLC) lookups, when it predicts that a load request will result in an LLC miss. We demonstrate that XPT prefetcher is shared among different cores, which enables an attacker to build cross-core side-channel and covert-channel attacks. We propose PrefetchX, a cross-core attack mechanism, to leak users’ sensitive data and activities.
+	We empirically demonstrate that PrefetchX can be used to extract private keys of real-world RSA applications. Furthermore, we show that PrefetchX can enable side-channel attacks that can monitor keystrokes and network traffic patterns of users. Our two cross-core covert-channel attacks also see a low error rate and a 122 KiB/s maximum channel capacity. Due to the cache-independent feature of PrefetchX, current cache-based mitigations are not effective against our attacks. Overall, our work uncovers a significant vulnerability in the XPT prefetcher, which can be exploited to compromise the confidentiality of sensitive information in both cryptography and non-cryptography-related applications among processor cores.}
 }
 
 @inproceedings{chen_gadgetspinner_2024,
@@ -77,7 +77,7 @@
 	month = mar,
 	year = {2024},
 	abbr = {HPCA'24},
-	annotation = {Equal contribution first-authors},
+	annotation = {* Equal contribution first-authors},
 	abstract = {Transient execution attacks constitute a major class of attacks affecting all modern out-of-order CPUs. These attacks exploit transient execution windows (i.e., the instructions that execute but never commit) to leak confidential information from victims. Existing attacks either rely on branch mispredictions, incorrect memory speculation, or deferred exception handling to create transient windows. In this work, we introduce a new transient execution primitive, called GadgetSpinner. We exploit the Loop Stream Detector (LSD) in Intel processors to perform out-of-loop-bounds execution and perform illegal operations.
 	Our key observation is that the LSD holds on to an old copy of branch predictions from the first iteration of the loop and keeps using this copy until a branch misprediction occurs, i.e., advances beyond the loop bound. We exploit the delay between the speculative iteration of the loop and when the branch misprediction is resolved. In this paper, we analyze the transient execution of the LSD and perform end-to-end attacks to (1) perform illegal reads from protected memory regions, (2) bypass Intel SGX and extract the weights of a trained CNN model in DNNL library, (3) break Kernel ASLR (KASLR), and finally (4) perform cross-core/cross-process attacks. We also show that many defenses for prior transient execution attacks, like secure Branch Prediction Unit (BPU) designs, fail to protect against GadgetSpinner.}
 }
@@ -98,7 +98,7 @@
 	title = {{Conjuring: Leaking Control Flow via Speculative Fetch Attacks}}, 
 	pdf = {https://hajiabadi.github.io/papers/paper_conjuring_dac2024.pdf},
 	booktitle = {{Proceedings of 61st Design Automation Conference (DAC 2024)}},
-        author = {Hajiabadi, Ali and Carlson, Trevor E.},
+        author = {<b>Hajiabadi</b>, <b>Ali</b> and Carlson, Trevor E.},
 	month = jun,
 	year = {2024},
 	abbr = {DAC'24},
