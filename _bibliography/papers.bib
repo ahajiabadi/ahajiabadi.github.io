@@ -2,7 +2,7 @@
 	title = {{NOREBA: A Compiler-Informed Non-speculative Out-of-Order Commit Processor}}, 
 	pdf = {https://dl.acm.org/doi/pdf/10.1145/3445814.3446726},
 	booktitle = {{Proceedings of 26th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2021)}},
-        author = {Hajiabadi, Ali and Diavastos, Andreas and Carlson, Trevor E.},
+        author = {<u>Hajiabadi</u>, <u>Ali</u> and Diavastos, Andreas and Carlson, Trevor E.},
 	month = apr,
 	year = {2021},
 	abbr = {ASPLOS'21},
@@ -14,7 +14,7 @@
 	title = {{ELFies: Executable Region Checkpoints for Performance Analysis and Simulation}}, 
 	pdf = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9370340},
 	booktitle = {{Proceedings of 19th International Symposium on Code Generation and Optimization (CGO 2021)}},
-        author = {Patil, Harish and Isaev, Alexander and Heirman, Wim and Sabu, Alen and Hajiabadi, Ali and Carlson, Trevor E.},
+        author = {Patil, Harish and Isaev, Alexander and Heirman, Wim and Sabu, Alen and <u>Hajiabadi</u>, <u>Ali</u> and Carlson, Trevor E.},
 	month = mar,
 	year = {2021},
 	abbr = {CGO'21},
@@ -22,7 +22,7 @@
 }
 
 @article{ltrfextension_2021,
-  	author={Sadrosadati, Mohammad and Mirhosseini, Amirhossein and Hajiabadi, Ali and Ehsani, Seyed Borna and Falahati, Hajar and Sarbazi-Azad, Hamid and Drumond, Mario and Falsafi, Babak and Ausavarungnirun, Rachata and Mutlu, Onur},
+  	author={Sadrosadati, Mohammad and Mirhosseini, Amirhossein and <u>Hajiabadi</u>, <u>Ali</u> and Ehsani, Seyed Borna and Falahati, Hajar and Sarbazi-Azad, Hamid and Drumond, Mario and Falsafi, Babak and Ausavarungnirun, Rachata and Mutlu, Onur},
   	journal={ACM Transactions on Computer Systems (TOCS)}, 
   	title={Highly Concurrent Latency-tolerant Register Files for GPUs}, 
   	arxiv = {2010.09330},
@@ -37,7 +37,7 @@
 	title = {{Fast, Robust and Accurate Detection of Cache-based Spectre Attack Phases}}, 
 	pdf = {https://dl.acm.org/doi/pdf/10.1145/3508352.3549330},
 	booktitle = {{Proceedings of 41st International Conference on Computer-Aided Design (ICCAD 2022)}},
-        author = {Pashrashid, Arash and Hajiabadi, Ali and Carlson, Trevor E.},
+        author = {Pashrashid, Arash and <u>Hajiabadi</u>, <u>Ali</u> and Carlson, Trevor E.},
 	month = nov,
 	year = {2022},
 	abbr = {ICCAD'22},
@@ -49,7 +49,7 @@
 	title = {{HidFix: Efficient Mitigation of Cache-based Spectre Attacks through Hidden Rollbacks}}, 
 	pdf = {https://hajiabadi.github.io/papers/paper_hidfix_iccad2023.pdf},
 	booktitle = {{Proceedings of 42nd International Conference on Computer-Aided Design (ICCAD 2023)}},
-        author = {Pashrashid, Arash and Hajiabadi, Ali and Carlson, Trevor E.},
+        author = {Pashrashid, Arash and <u>Hajiabadi</u>, <u>Ali</u> and Carlson, Trevor E.},
 	month = nov,
 	year = {2023},
 	abbr = {ICCAD'23},
@@ -57,23 +57,34 @@
 	Combining side-channel attack (SCA) detectors with mitigation strategies is a promising direction to achieve efficient and selective mitigation of Spectre attacks. In this work, we enumerate the combinations of state-of-the-art detection and mitigation strategies and present both new attacks as well as the potential risks of such detection/mitigation combinations. The result is the HidFix methodology, an efficient mitigation for cache-based Spectre attacks, that addresses the security limitations of prior work. We show that HidFix has a near-zero performance overhead for all evaluated applications. HidFix rollbacks the misspeculated data leaks in a timely manner, before an attacker has the chance to infer the victim’s sensitive data. We demonstrate that HidFix is more secure compared to prior cache-based Spectre defenses, and moreover, it does not introduce new side effects that might enable an attacker to observe secret dependent changes in the system.}
 }
 
-@inproceedings{chen_prefetchx_2024,
-	title = {{PrefetchX: Cross-Core Cache-Agnostic Prefetcher-Based Side-Channel Attacks}}, 
-	pdf = {https://hajiabadi.github.io/papers/paper_prefetchX_hpca2024.pdf},
-	booktitle = {{Proceedings of 30th International Symposium on High-Performance Computer Architecture (HPCA 2024)}},
-        author = {Chen, Yun and Hajiabadi, Ali and Pei, Lingfeng and Carlson, Trevor E.},
-	month = mar,
+@inproceedings{hajiabadi_conjuring_2024,
+	title = {{Conjuring: Leaking Control Flow via Speculative Fetch Attacks}}, 
+	pdf = {https://hajiabadi.github.io/papers/paper_conjuring_dac2024.pdf},
+	booktitle = {{Proceedings of 61st Design Automation Conference (DAC 2024)}},
+        author = {<u>Hajiabadi</u>, <u>Ali</u> and Carlson, Trevor E.},
+	month = jun,
 	year = {2024},
-	abbr = {HPCA'24},
-	abstract = {n this paper, we reveal the existence of a new class of prefetcher, the XPT prefetcher, in modern Intel processors which has never been officially detailed. It speculatively issues a load, bypassing last-level cache (LLC) lookups, when it predicts that a load request will result in an LLC miss. We demonstrate that XPT prefetcher is shared among different cores, which enables an attacker to build cross-core side-channel and covert-channel attacks. We propose PrefetchX, a cross-core attack mechanism, to leak users’ sensitive data and activities.
-	We empirically demonstrate that PrefetchX can be used to extract private keys of real-world RSA applications. Furthermore, we show that PrefetchX can enable side-channel attacks that can monitor keystrokes and network traffic patterns of users. Our two cross-core covert-channel attacks also see a low error rate and a 122 KiB/s maximum channel capacity. Due to the cache-independent feature of PrefetchX, current cache-based mitigations are not effective against our attacks. Overall, our work uncovers a significant vulnerability in the XPT prefetcher, which can be exploited to compromise the confidentiality of sensitive information in both cryptography and non-cryptography-related applications among processor cores.}
+	abbr = {DAC'24},
+	abstract = {In this work, we propose a new attack called Conjuring that exploits one of the main features of CPUs’ frontend: speculative fetch of instructions. We show that the Pattern History Table (PHT) in modern CPUs are a great channel to learn and leak control flow of victim applications. Unlike prior work, Conjuring does not require that one primes the PHT or interferes with the victim execution enabling a realistic and unprivileged attacker to leak control flow information. By improving the branch predictors, our attack becomes even more serious and practical. We demonstrate the feasibility of our attack on different existing Intel, AMD, and Apple CPUs.}
+}
+
+@inproceedings{hajiabadi_levioso_2024,
+	title = {{Levioso: Efficient Compiler-Informed Secure Speculation}}, 
+	pdf = {https://hajiabadi.github.io/papers/paper_levioso_dac2024.pdf},
+	booktitle = {{Proceedings of 61st Design Automation Conference (DAC 2024)}},
+        author = {<u>Hajiabadi</u>, <u>Ali</u> and Agarwal, Archit and Diavastos, Andreas and Carlson, Trevor E.},
+	month = jun,
+	year = {2024},
+	abbr = {DAC'24},
+	abstract = {Spectre-type attacks have exposed a major class of vulnerabilities arising from speculative execution of instructions, the main performance enabler of modern CPUs. These attacks speculatively leak secrets that have been either speculatively loaded (seen in sandboxed programs) or non-speculatively loaded (seen in constant-time programs). Various hardware-only defenses have been proposed to mitigate both speculative and non-speculative secrets via all potential transmission channels. However, limited program knowledge is exposed to the hardware and these solutions conservatively restrict the execution of all instructions that can potentially leak.
+	In this work, we show that not all instructions depend on older unresolved branches and they can safely execute without leaking speculative information. We present Levioso, a novel hardware/software co-design, that provides comprehensive secure speculation guarantees while reducing performance overhead compared to existing defenses. Levioso informs the hardware about true branch dependencies and applies restrictions only when necessary. Our evaluations demonstrate that Levioso is able to significantly reduce the performance overhead compared to two prior defenses from 51% and 43% to just 23%.}
 }
 
 @inproceedings{chen_gadgetspinner_2024,
 	title = {{GadgetSpinner: A New Transient Execution Primitive using the Loop Stream Detector}}, 
 	pdf = {https://hajiabadi.github.io/papers/paper_gadget_spinner_hpca2024.pdf},
 	booktitle = {{Proceedings of 30th International Symposium on High-Performance Computer Architecture (HPCA 2024)}},
-        author = {Chen*, Yun and Hajiabadi*, Ali and Carlson, Trevor E.},
+        author = {Chen*, Yun and <u>Hajiabadi*</u>, <u>Ali</u> and Carlson, Trevor E.},
 	month = mar,
 	year = {2024},
 	abbr = {HPCA'24},
@@ -82,25 +93,14 @@
 	Our key observation is that the LSD holds on to an old copy of branch predictions from the first iteration of the loop and keeps using this copy until a branch misprediction occurs, i.e., advances beyond the loop bound. We exploit the delay between the speculative iteration of the loop and when the branch misprediction is resolved. In this paper, we analyze the transient execution of the LSD and perform end-to-end attacks to (1) perform illegal reads from protected memory regions, (2) bypass Intel SGX and extract the weights of a trained CNN model in DNNL library, (3) break Kernel ASLR (KASLR), and finally (4) perform cross-core/cross-process attacks. We also show that many defenses for prior transient execution attacks, like secure Branch Prediction Unit (BPU) designs, fail to protect against GadgetSpinner.}
 }
 
-@inproceedings{hajiabadi_levioso_2024,
-	title = {{Levioso: Efficient Compiler-Informed Secure Speculation}}, 
-	pdf = {https://hajiabadi.github.io/papers/paper_levioso_dac2024.pdf},
-	booktitle = {{Proceedings of 61st Design Automation Conference (DAC 2024)}},
-        author = {Hajiabadi, Ali and Agarwal, Archit and Diavastos, Andreas and Carlson, Trevor E.},
-	month = jun,
+@inproceedings{chen_prefetchx_2024,
+	title = {{PrefetchX: Cross-Core Cache-Agnostic Prefetcher-Based Side-Channel Attacks}}, 
+	pdf = {https://hajiabadi.github.io/papers/paper_prefetchX_hpca2024.pdf},
+	booktitle = {{Proceedings of 30th International Symposium on High-Performance Computer Architecture (HPCA 2024)}},
+        author = {Chen, Yun and <u>Hajiabadi</u>, <u>Ali</u> and Pei, Lingfeng and Carlson, Trevor E.},
+	month = mar,
 	year = {2024},
-	abbr = {DAC'24},
-	abstract = {Spectre-type attacks have exposed a major class of vulnerabilities arising from speculative execution of instructions, the main performance enabler of modern CPUs. These attacks speculatively leak secrets that have been either speculatively loaded (seen in sandboxed programs) or non-speculatively loaded (seen in constant-time programs). Various hardware-only defenses have been proposed to mitigate both speculative and non-speculative secrets via all potential transmission channels. However, limited program knowledge is exposed to the hardware and these solutions conservatively restrict the execution of all instructions that can potentially leak.
-	In this work, we show that not all instructions depend on older unresolved branches and they can safely execute without leaking speculative information. We present Levioso, a novel hardware/software co-design, that provides comprehensive secure speculation guarantees while reducing performance overhead compared to existing defenses. Levioso informs the hardware about true branch dependencies and applies restrictions only when necessary. Our evaluations demonstrate that Levioso is able to significantly reduce the performance overhead compared to two prior defenses from 51% and 43% to just 23%.}
-}
-
-@inproceedings{hajiabadi_conjuring_2024,
-	title = {{Conjuring: Leaking Control Flow via Speculative Fetch Attacks}}, 
-	pdf = {https://hajiabadi.github.io/papers/paper_conjuring_dac2024.pdf},
-	booktitle = {{Proceedings of 61st Design Automation Conference (DAC 2024)}},
-        author = {<b>Hajiabadi</b>, <b>Ali</b> and Carlson, Trevor E.},
-	month = jun,
-	year = {2024},
-	abbr = {DAC'24},
-	abstract = {In this work, we propose a new attack called Conjuring that exploits one of the main features of CPUs’ frontend: speculative fetch of instructions. We show that the Pattern History Table (PHT) in modern CPUs are a great channel to learn and leak control flow of victim applications. Unlike prior work, Conjuring does not require that one primes the PHT or interferes with the victim execution enabling a realistic and unprivileged attacker to leak control flow information. By improving the branch predictors, our attack becomes even more serious and practical. We demonstrate the feasibility of our attack on different existing Intel, AMD, and Apple CPUs.}
+	abbr = {HPCA'24},
+	abstract = {n this paper, we reveal the existence of a new class of prefetcher, the XPT prefetcher, in modern Intel processors which has never been officially detailed. It speculatively issues a load, bypassing last-level cache (LLC) lookups, when it predicts that a load request will result in an LLC miss. We demonstrate that XPT prefetcher is shared among different cores, which enables an attacker to build cross-core side-channel and covert-channel attacks. We propose PrefetchX, a cross-core attack mechanism, to leak users’ sensitive data and activities.
+	We empirically demonstrate that PrefetchX can be used to extract private keys of real-world RSA applications. Furthermore, we show that PrefetchX can enable side-channel attacks that can monitor keystrokes and network traffic patterns of users. Our two cross-core covert-channel attacks also see a low error rate and a 122 KiB/s maximum channel capacity. Due to the cache-independent feature of PrefetchX, current cache-based mitigations are not effective against our attacks. Overall, our work uncovers a significant vulnerability in the XPT prefetcher, which can be exploited to compromise the confidentiality of sensitive information in both cryptography and non-cryptography-related applications among processor cores.}
 }
