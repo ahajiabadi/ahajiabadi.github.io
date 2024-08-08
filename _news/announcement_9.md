@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'm serving as Heavy PC member at EuroSys '24 Shadow Program Committee.
+I'm serving as Heavy PC member at EuroSys'24 Shadow Program Committee.
