@@ -80,19 +80,19 @@
   "interests": [
     {
       "name": "Systems Security",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-tag"
     },
     {
       "name": "Hardware/Software Co-design",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-tag"
     },
     {
       "name": "Computer Architecture",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-tag"
     },
     {
       "name": "Compilers",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-tag"
     }
-  ],
+  ]
 }
