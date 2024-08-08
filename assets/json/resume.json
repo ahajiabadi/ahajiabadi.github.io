@@ -8,7 +8,7 @@
     "url": "https://ahajiabadi.github.io/",
     "summary": "I am a postdoctoral researcher at ETH Zurich. I completed my PhD at National University of Singapore. My research is focused on Systems Security and Hardware/Software Co-design.",
     "location": {
-      "address": "Gloriastr. 35",
+      "address": "ETZ G 78.2, Gloriastr. 35",
       "postalCode": "8092",
       "city": "Zurich",
       "countryCode": "Switzerland"
@@ -88,7 +88,12 @@
       "title": "61st DAC Best Paper Award Nomination",
       "date": "2024-06-26",
       "url": "https://www.dac.com/About/Conference-Archive/61st-DAC/Best-Paper-Recipients-2024",
-      "summary": "For the Conjuring paper; top five selected papers among 337 research papers of the program."
+      "summary": "For the Conjuring paper; five selected papers among 337 research papers of the program."
+    },
+    {
+      "title": "NUSGS Research Incentive Award",
+      "date": "2023-10-01",
+      "summary": "Research gift of $2,500 to PGF holders with excellent performance."
     },
     {
       "title": "Research Achievement Award",
