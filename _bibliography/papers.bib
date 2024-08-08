@@ -7,6 +7,7 @@
 	year = {2024},
 	abbr = {DAC'24},
 	selected={true},
+	video = {https://youtu.be/CuaswVA0-IQ},
 	award = {Five papers selected out of 337 research papers of the program (5/337 = 1.5%)},
 	award_name = {Best Paper Award Nominee},
 	abstract = {In this work, we propose a new attack called Conjuring that exploits one of the main features of CPUs’ frontend: speculative fetch of instructions. We show that the Pattern History Table (PHT) in modern CPUs are a great channel to learn and leak control flow of victim applications. Unlike prior work, Conjuring does not require that one primes the PHT or interferes with the victim execution enabling a realistic and unprivileged attacker to leak control flow information. By improving the branch predictors, our attack becomes even more serious and practical. We demonstrate the feasibility of our attack on different existing Intel, AMD, and Apple CPUs.}
@@ -21,6 +22,7 @@
 	year = {2024},
 	abbr = {DAC'24},
 	code = {https://github.com/Compiler-Dependency-Analysis/llvm-levioso},
+	video = {https://youtu.be/1s6GXouKLGE},
 	selected={true},
 	abstract = {Spectre-type attacks have exposed a major class of vulnerabilities arising from speculative execution of instructions, the main performance enabler of modern CPUs. These attacks speculatively leak secrets that have been either speculatively loaded (seen in sandboxed programs) or non-speculatively loaded (seen in constant-time programs). Various hardware-only defenses have been proposed to mitigate both speculative and non-speculative secrets via all potential transmission channels. However, limited program knowledge is exposed to the hardware and these solutions conservatively restrict the execution of all instructions that can potentially leak.
 	In this work, we show that not all instructions depend on older unresolved branches and they can safely execute without leaking speculative information. We present Levioso, a novel hardware/software co-design, that provides comprehensive secure speculation guarantees while reducing performance overhead compared to existing defenses. Levioso informs the hardware about true branch dependencies and applies restrictions only when necessary. Our evaluations demonstrate that Levioso is able to significantly reduce the performance overhead compared to two prior defenses from 51% and 43% to just 23%.}
@@ -87,6 +89,7 @@
 	month = apr,
 	year = {2021},
 	abbr = {ASPLOS'21},
+	video = {https://youtu.be/i1STxOqAaY4},
 	selected={true},
 	abstract = {Modern superscalar processors execute instructions out-of-order, but commit them in program order to provide precise exception handling and safe instruction retirement. However, in-order instruction commit is highly conservative and holds on to critical resources far longer than necessary, severely limiting the reach of general-purpose processors, ultimately reducing performance. Solutions that allow for efficient, early reclamation of these critical resources could seize the opportunity to improve performance. One such solution is out-of-order commit, which has traditionally been challenging due to inefficient, complex hardware used to guarantee safe instruction retirement and provide precise exception handling.
 	In this work, we present NOREBA, a processor for Non-speculative Out-of-order REtirement via Branch Reconvergence Analysis. In NOREBA, we enable non-speculative out-of-order commit and resource reclamation in a light-weight manner, improving performance and efficiency. We accomplish this through a combination of (1) automatic compiler annotation of true branch dependencies, and (2) an efficient re-design of the reorder buffer from traditional processors. By exploiting compiler branch dependency information, this system achieves 95% of the performance of aggressive, speculative solutions, without any additional speculation, and while maintaining energy efficiency.}
