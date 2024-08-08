@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I received the SoC Research Incentive Award from School of Compuing, NUS.
+I received the NUSGS Research Incentive Award from School of Compuing, NUS.
