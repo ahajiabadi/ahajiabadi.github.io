@@ -41,10 +41,35 @@
   ],
   "work": [
     {
-      "name": "ETH Zurich",
+      "name": "ETH Zurich, COMSEC Group",
+      "location": "Zurich, Switzerland",
       "position": "Postdoctoral Fellow",
       "startDate": "2024-07-15",
-      "summary": "Research: CPU and DRAM security, novel attacks and defenses for modern computing systems."
+      "summary": "Research: CPU and DRAM security, novel attacks and defenses for modern computing systems"
+    },
+    {
+      "name": "National University of Singapore, CompArch Group",
+      "location": "Singapore",
+      "position": "Graduate Research Assistant",
+      "startDate": "2019-08-01",
+      "endDate": "2024-06-30",
+      "summary": "Research: hardware/software co-design for efficient and secure modern processors"
+    },
+    {
+      "name": "Sharif University of Technology, HPCAN Group",
+      "location": "Tehran, Iran",
+      "position": "Research Assistant",
+      "startDate": "2016-07-01",
+      "endDate": "2019-06-30",
+      "summary": "Research: GPU register prefetching via hardware/software co-design and compiler optimizations"
+    },
+    {
+      "name": "National University of Singapore, CompArch Group",
+      "location": "Singapore",
+      "position": "Visiting Research Intern",
+      "startDate": "2018-06-15",
+      "endDate": "2018-09-15",
+      "summary": "Research: exploring new implementations for out-of-order commit processors"
     }
   ],
   "awards": [
