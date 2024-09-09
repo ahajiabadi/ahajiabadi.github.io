@@ -58,6 +58,17 @@
 	We empirically demonstrate that PrefetchX can be used to extract private keys of real-world RSA applications. Furthermore, we show that PrefetchX can enable side-channel attacks that can monitor keystrokes and network traffic patterns of users. Our two cross-core covert-channel attacks also see a low error rate and a 122 KiB/s maximum channel capacity. Due to the cache-independent feature of PrefetchX, current cache-based mitigations are not effective against our attacks. Overall, our work uncovers a significant vulnerability in the XPT prefetcher, which can be exploited to compromise the confidentiality of sensitive information in both cryptography and non-cryptography-related applications among processor cores.}
 }
 
+@article{paradise_2024,
+  	author={Chen, Yun and <u>Hajiabadi</u>, <u>Ali</u> and Poussier, Romain and Tavva, Yaswanth and Diavastos, Andreas and Bhasin, Shivam and Carlson, Trevor E.},
+  	journal={ACM Transactions on Architecture and Code Optimization (TACO)}, 
+  	title={PARADISE: Criticality-Aware Instruction Reordering for Power Attack Resistance}, 
+  	arxiv = {2107.11336},
+  	year={2024},
+	abbr = {TACO'24},
+	abstract = {Power side-channel attacks exploit the correlation of power consumption with the instructions and data being processed to extract secrets from a device (e.g., cryptographic keys). Prior work primarily focused on protecting small embedded micro-controllers and in-order processors rather than high-performance, out-of-order desktop and server CPUs. In this paper, we present PARADISE, a general-purpose out-of-order processor with always-on protection, that implements a novel dynamic instruction scheduler to provide obfuscated execution and mitigate power analysis attacks. To achieve this, we exploit the time between operand availability of critical instructions (slack) and create high-performance random schedules. 
+	Further, we highlight the dangers of using incorrect adversarial assumptions, which can often lead to a false sense of security. Therefore, we perform an extended security analysis on AES-128 using different levels of adversaries, from basic to advanced, including a CNN-based attack. Our advanced security evaluation assumes a strong adversary with full knowledge of the countermeasure and demonstrates a significant security improvement of 556× when combined with Boolean Masking over a baseline only protected by masking, and 62, 500× over an unprotected baseline. The resulting overhead in performance, power and area of PARADISE is 3.2%, 1.2% and 0.8% respectively.}
+}
+
 @inproceedings{pashrashid_hidfix_2023,
 	title = {{HidFix: Efficient Mitigation of Cache-based Spectre Attacks through Hidden Rollbacks}}, 
 	pdf = {https://hajiabadi.github.io/papers/paper_hidfix_iccad2023.pdf},
