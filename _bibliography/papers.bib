@@ -65,6 +65,7 @@
 	pdf = {https://dl.acm.org/doi/pdf/10.1145/3701991},
   	year={2024},
 	abbr = {TACO'24},
+	selected={true},
 	annotation = {* Equal contribution first-authors},
 	abstract = {Power side-channel attacks exploit the correlation of power consumption with the instructions and data being processed to extract secrets from a device (e.g., cryptographic keys). Prior work primarily focused on protecting small embedded micro-controllers and in-order processors rather than high-performance, out-of-order desktop and server CPUs. In this paper, we present PARADISE, a general-purpose out-of-order processor with always-on protection, that implements a novel dynamic instruction scheduler to provide obfuscated execution and mitigate power analysis attacks. To achieve this, we exploit the time between operand availability of critical instructions (slack) and create high-performance random schedules. 
 	Further, we highlight the dangers of using incorrect adversarial assumptions, which can often lead to a false sense of security. Therefore, we perform an extended security analysis on AES-128 using different levels of adversaries, from basic to advanced, including a CNN-based attack. Our advanced security evaluation assumes a strong adversary with full knowledge of the countermeasure and demonstrates a significant security improvement of 556× when combined with Boolean Masking over a baseline only protected by masking, and 62, 500× over an unprotected baseline. The resulting overhead in performance, power and area of PARADISE is 3.2%, 1.2% and 0.8% respectively.}
