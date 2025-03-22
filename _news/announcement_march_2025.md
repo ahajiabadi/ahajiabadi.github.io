@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Cassandra is accepted to appear in ISCA 2025 (top-tier conference in Computer Architecture)!
+Cassandra is accepted to appear in ISCA 2025 (top-tier conference in Computer Architecture).
