@@ -10,6 +10,20 @@
 	abstract = {Constant-time programming is a widely deployed approach to harden cryptographic programs against side channel attacks. However, modern processors often violate the underlying assumptions of standard constant-time policies by transiently executing unintended paths of the program. Despite many solutions proposed, addressing control flow misspeculations in an efficient way without losing performance is an open problem. In this work, we propose Cassandra, a novel hardware/software mechanism to enforce sequential execution for constant-time cryptographic code in a highly efficient manner. Cassandra explores the radical design point of disabling the branch predictor and recording-and-replaying sequential control flow of the program. Two key insights that enable our design are that (1) the sequential control flow of a constant-time program is mostly static over different runs, and (2) cryptographic programs are loop-intensive and their control flow patterns repeat in a highly compressible way.  These insights allow us to perform an upfront branch analysis that significantly compresses control flow traces. We add a small component to a typical processor design, the Branch Trace Unit, to store compressed traces and determine fetch redirections according to the sequential model of the program. Despite providing a strong security guarantee, Cassandra counterintuitively provides an average 1.85% speedup compared to an unsafe baseline processor, mainly due to enforcing near-perfect fetch redirections.}
 }
 
+@article{paradise_2025,
+  	author={Chen*, Yun and <u>Hajiabadi</u>*, <u>Ali</u> and Poussier, Romain and Tavva, Yaswanth and Diavastos, Andreas and Bhasin, Shivam and Carlson, Trevor E.},
+  	journal={ACM Transactions on Architecture and Code Optimization (TACO)}, 
+  	title={PARADISE: Criticality-Aware Instruction Reordering for Power Attack Resistance}, 
+	pdf = {https://dl.acm.org/doi/pdf/10.1145/3701991},
+        month=mar,
+  	year={2025},
+	abbr = {TACO'25},
+	selected={true},
+	annotation = {* Equal contribution first-authors},
+	abstract = {Power side-channel attacks exploit the correlation of power consumption with the instructions and data being processed to extract secrets from a device (e.g., cryptographic keys). Prior work primarily focused on protecting small embedded micro-controllers and in-order processors rather than high-performance, out-of-order desktop and server CPUs. In this paper, we present PARADISE, a general-purpose out-of-order processor with always-on protection, that implements a novel dynamic instruction scheduler to provide obfuscated execution and mitigate power analysis attacks. To achieve this, we exploit the time between operand availability of critical instructions (slack) and create high-performance random schedules. 
+	Further, we highlight the dangers of using incorrect adversarial assumptions, which can often lead to a false sense of security. Therefore, we perform an extended security analysis on AES-128 using different levels of adversaries, from basic to advanced, including a CNN-based attack. Our advanced security evaluation assumes a strong adversary with full knowledge of the countermeasure and demonstrates a significant security improvement of 556× when combined with Boolean Masking over a baseline only protected by masking, and 62, 500× over an unprotected baseline. The resulting overhead in performance, power and area of PARADISE is 3.2%, 1.2% and 0.8% respectively.}
+}
+
 @inproceedings{hajiabadi_conjuring_2024,
 	title = {{Conjuring: Leaking Control Flow via Speculative Fetch Attacks}}, 
 	pdf = {https://dl.acm.org/doi/pdf/10.1145/3649329.3655895},
@@ -68,19 +82,6 @@
 	code = {https://zenodo.org/records/10118346},
 	abstract = {n this paper, we reveal the existence of a new class of prefetcher, the XPT prefetcher, in modern Intel processors which has never been officially detailed. It speculatively issues a load, bypassing last-level cache (LLC) lookups, when it predicts that a load request will result in an LLC miss. We demonstrate that XPT prefetcher is shared among different cores, which enables an attacker to build cross-core side-channel and covert-channel attacks. We propose PrefetchX, a cross-core attack mechanism, to leak users’ sensitive data and activities.
 	We empirically demonstrate that PrefetchX can be used to extract private keys of real-world RSA applications. Furthermore, we show that PrefetchX can enable side-channel attacks that can monitor keystrokes and network traffic patterns of users. Our two cross-core covert-channel attacks also see a low error rate and a 122 KiB/s maximum channel capacity. Due to the cache-independent feature of PrefetchX, current cache-based mitigations are not effective against our attacks. Overall, our work uncovers a significant vulnerability in the XPT prefetcher, which can be exploited to compromise the confidentiality of sensitive information in both cryptography and non-cryptography-related applications among processor cores.}
-}
-
-@article{paradise_2024,
-  	author={Chen*, Yun and <u>Hajiabadi</u>*, <u>Ali</u> and Poussier, Romain and Tavva, Yaswanth and Diavastos, Andreas and Bhasin, Shivam and Carlson, Trevor E.},
-  	journal={ACM Transactions on Architecture and Code Optimization (TACO)}, 
-  	title={PARADISE: Criticality-Aware Instruction Reordering for Power Attack Resistance}, 
-	pdf = {https://dl.acm.org/doi/pdf/10.1145/3701991},
-  	year={2024},
-	abbr = {TACO'24},
-	selected={true},
-	annotation = {* Equal contribution first-authors},
-	abstract = {Power side-channel attacks exploit the correlation of power consumption with the instructions and data being processed to extract secrets from a device (e.g., cryptographic keys). Prior work primarily focused on protecting small embedded micro-controllers and in-order processors rather than high-performance, out-of-order desktop and server CPUs. In this paper, we present PARADISE, a general-purpose out-of-order processor with always-on protection, that implements a novel dynamic instruction scheduler to provide obfuscated execution and mitigate power analysis attacks. To achieve this, we exploit the time between operand availability of critical instructions (slack) and create high-performance random schedules. 
-	Further, we highlight the dangers of using incorrect adversarial assumptions, which can often lead to a false sense of security. Therefore, we perform an extended security analysis on AES-128 using different levels of adversaries, from basic to advanced, including a CNN-based attack. Our advanced security evaluation assumes a strong adversary with full knowledge of the countermeasure and demonstrates a significant security improvement of 556× when combined with Boolean Masking over a baseline only protected by masking, and 62, 500× over an unprotected baseline. The resulting overhead in performance, power and area of PARADISE is 3.2%, 1.2% and 0.8% respectively.}
 }
 
 @inproceedings{pashrashid_hidfix_2023,
