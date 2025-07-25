@@ -27,5 +27,10 @@ You can find my CV <a href="https://ahajiabadi.github.io/assets/pdf/Ali_Hajiabad
   <li><strong>P&amp;S Cybersecurity (Capture the Flag)</strong>. BSc Spring 2025.</li>
 </ul>
 
-<h3>Program Committee Services</h3>
-<p>HPCA 2026, MICRO 2025, EuroS&amp;P 2026, AsiaCCS 2026</p>
+<h3>Academic Services</h3>
+<ul>
+  <li><strong>Program Committee</strong>: HPCA 2026, MICRO 2025, EuroS&amp;P 2026, AsiaCCS 2026</li>
+  <li><strong>Sub-reviewer</strong>: USENIX Security 2025</li>
+  <li><strong>Journals</strong>: ACM TACO, ACM TRETS, IEEE CAL</li>
+  <li><strong>Shadow Program Committee</strong>: EuroSys 2024, EuroSys 2023</li>
+</ul>
