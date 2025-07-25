@@ -20,11 +20,11 @@ My research has been recognized and supported by the School of Computing CS PhD 
 
 You can find my CV <a href="https://ahajiabadi.github.io/assets/pdf/Ali_Hajiabadi_CV.pdf">here</a>.
 
-<h3>Teaching</h3>
+<h3>Teaching (Lecturer/Co-lecturer)</h3>
 <ul>
-  <li><strong>Computer Security</strong>. BSc Fall 2025.</li>
-  <li><strong>Computer Engineering</strong>. BSc Spring 2025.</li>
-  <li><strong>P&amp;S Cybersecurity (Capture the Flag)</strong>. BSc Spring 2025.</li>
+  <li><strong>Computer Security</strong>. BSc Fall 2025 (ETH Zurich)</li>
+  <li><strong>Computer Engineering</strong>. BSc Spring 2025 (ETH Zurich)</li>
+  <li><strong>P&amp;S Cybersecurity (Capture the Flag)</strong>. BSc Spring 2025 (ETH Zurich)</li>
 </ul>
 
 <h3>Academic Services</h3>
