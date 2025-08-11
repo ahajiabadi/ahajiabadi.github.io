@@ -6,7 +6,7 @@
 	month = oct,
 	year = {2025},
         abbr = {MICRO'25},
-	abstract = {coming soon}
+	abstract = {Security research on modern CPUs has raised numerous concerns in recent years. These security issues stem from classic microarchitectural optimizations designed decades ago, without consideration for security. Stack pointer tracking, also known as the stack engine in recent CPUs, is one such optimization. To investigate the security implications of the stack engine, we reverse engineer its operational details on a number of recent Intel and AMD CPUs fo the first time. Our results show the particular microarchitecture-dependent behaviors of the stack engine, such as the conditions under which it needs to synchronizes the stack pointer values with the backend. Using these results, we build three primitives called Direct Overflow, Sync+Reload and Prime+Sync+Probe that enable information leakage through the stack engine under different conditions. We use these primitives in the construction of various covert and side-channel attacks, leaking sensitive patient records from a widely-used JSON library as an example. Our mitigation efforts reveal that recent AMD Zen 4 and Zen 5 CPUs include undocumented chicken bits which allow enabling or disabling the stack engine. Using these bits to disable the stack engine, we measure 3.98% and 3.94% slowdown using SPEC CPU2017 on AMD Zen 4 and Zen 5, respectively, prompting the need to consider more secure designs for the stack engine in future CPUs which we also discuss.}
 }
 
 @inproceedings{hajiabadi_cassandra_2025,
