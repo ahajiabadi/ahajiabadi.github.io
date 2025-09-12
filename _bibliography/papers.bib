@@ -1,13 +1,26 @@
+@inproceedings{graf_vmscape_2026,
+	title = {{VMScape: Exposing and Exploiting Incomplete Branch Predictor Isolation in Cloud Environments}},
+    pdf = {https://comsec-files.ethz.ch/papers/vmscape_sp26.pdf},
+	booktitle = {{Proceedings of 47th Symposium on Security and Privacy (S\&P 2026)}},
+	code = {https://github.com/comsec-group/vmscape},
+	author = {Graf, Jean-Claude and Rüegge, Sandro and <u>Hajiabadi</u>, <u>Ali</u> and Razavi, Kaveh},
+	month = may,
+	year = {2026},
+    abbr = {S\&P'25},
+    abstract = {Virtualization is a cornerstone of modern cloud infrastructures, providing the required isolation to customers. This isolation, however, is threatened by speculative execution attacks which the CPU vendors attempt to mitigate by extending the isolation to the branch predictor state. Our systematic analysis shows that this extension unfortunately is incomplete: while the most obvious case of the guest controlling branch prediction in the host has been addressed by existing hardware mitigations, we discover a number of new Spectre Branch Target Injection (Spectre-BTI) attack primitives on AMD Zen 1-5 and Intel Coffee Lake CPUs that, among others, enable a malicious guest to control indirect branch prediction in the host when it is executing in userspace. Using the aforementioned primitive, we craft VMScape, the first Spectre-BTI attack that enables a malicious KVM guest to leak arbitrary memory from an unmodified QEMU process running on an AMD Zen 4 host at the speed of 32 B/s, exposing cryptographic keys for disk encryption and decryption. Our analysis of possible mitigation strategies shows that it is possible to mitigate VMScape by selectively flushing the branch predictor with minimal performance impact in common scenarios.}
+}
+
 @inproceedings{hajiabadi_charm_2025,
 	title = {{CHaRM: Checkpointed and Hashed Counters for Flexible and Efficient Rowhammer Mitigation}},
 	pdf = {https://comsec-files.ethz.ch/papers/charm_ccs25.pdf},
 	booktitle = {{Proceedings of 32nd Conference on Computer and Communications Security (CCS 2025)}},
+	code = {https://github.com/comsec-group/charm},
 	author = {<u>Hajiabadi</u>, <u>Ali</u> and Marazzi, Michele and Razavi, Kaveh},
 	month = oct,
 	year = {2025},
     abbr = {CCS'25},
     selected={true},
-	abstract = {coming soon.}
+	abstract = {Despite efforts by DRAM vendors to mitigate Rowhammer, it is still a potent attack vector. CPU vendors are reluctant to deploy deterministic mitigations against Rowhammer due to the high cost that needs to be paid for the most vulnerable DRAM device, even though an average DRAM device is considerably less vulnerable. The main reason for this high cost is the need to track an increasing number of aggressor rows with the worsening Rowhammer threshold. Our proposed in-CPU mitigation, called CHaRM, breaks this dependency by efficiently mapping a large number of rows to a fixed number of hashed counters. Since multiple rows are now mapped to a limited number of counters, collisions can occur. To avoid excessive mitigative refreshes upon collisions, CHaRM deploys a checkpointing mechanism that saves the state of rows evicted from the table. When a row is activated again, CHaRM restores its checkpointed value and resumes tracking. Our evaluation shows that CHaRM incurs negligible slowdown, below 1% across all Rowhammer thresholds, while improving area, power, and energy by 3.8×, 4.4×, and 8.2×, respectively, for Rowhammer threshold of 1K compared to the state of the art.}
 }
 
 @inproceedings{niederer_stackengine_2025,
