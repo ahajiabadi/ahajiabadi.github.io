@@ -29,8 +29,8 @@ You can find my CV <a href="https://ahajiabadi.github.io/assets/pdf/Ali_Hajiabad
 
 <h3>Academic Services</h3>
 <ul>
-  <li><strong>Program Committee</strong>: ISCA 2026, HPCA 2026, MICRO 2025, EuroS&amp;P 2026, AsiaCCS 2026</li>
-  <li><strong>Sub-reviewer</strong>: USENIX Security 2025</li>
+  <li><strong>Program Committee</strong>: ISCA ('26), MICRO ('25), HPCA ('26), uASC ('26), EuroS&amp;P ('26), AsiaCCS ('26)</li>
+  <li><strong>Sub-reviewer</strong>: USENIX Security ('25)</li>
   <li><strong>Journals</strong>: ACM TACO, ACM TRETS, IEEE CAL</li>
-  <li><strong>Shadow Program Committee</strong>: EuroSys 2024, EuroSys 2023</li>
+  <li><strong>Shadow Program Committee</strong>: EuroSys ('24, '23)</li>
 </ul>
