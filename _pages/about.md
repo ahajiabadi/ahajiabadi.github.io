@@ -23,13 +23,13 @@ You can find my CV <a href="https://ahajiabadi.github.io/assets/pdf/Ali_Hajiabad
 <h3>Teaching (Lecturer/Co-lecturer)</h3>
 <ul>
   <li><strong>Computer Security</strong>. BSc Fall 2025 (ETH Zurich)</li>
-  <li><strong>Computer Engineering</strong>. BSc Spring 2025 (ETH Zurich)</li>
+  <li><strong>Computer Engineering</strong>. BSc Spring 2025, Spring 2026 (ETH Zurich)</li>
   <li><strong>P&amp;S Cybersecurity (Capture the Flag)</strong>. BSc Spring 2025 (ETH Zurich)</li>
 </ul>
 
 <h3>Academic Services</h3>
 <ul>
-  <li><strong>Program Committee</strong>: ISCA ('26), MICRO ('25), HPCA ('26), uASC ('26), EuroS&amp;P ('26), AsiaCCS ('26)</li>
+  <li><strong>Program Committee</strong>:  MICRO ('26, '25), ISCA ('26), HPCA ('26), uASC ('26), EuroS&amp;P ('26), AsiaCCS ('26)</li>
   <li><strong>Sub-reviewer</strong>: USENIX Security ('25)</li>
   <li><strong>Journals</strong>: ACM TACO, ACM TRETS, IEEE CAL</li>
   <li><strong>Shadow Program Committee</strong>: EuroSys ('24, '23)</li>
