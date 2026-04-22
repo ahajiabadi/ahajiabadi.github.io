@@ -1,3 +1,13 @@
+@inproceedings{niederer_glasswall_2026,
+	title = {{Glasswall: Enforcing User-Defined Data Usage Policies in Functions as a Service}}, 
+	booktitle = {{Proceedings of 23rd Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA 2026)}},
+	author = {Niederer, Silvan and Hajiabadi, Ali and Razavi, Kaveh},
+	month = jul,
+	year = {2026},
+	abbr = {DIMVA'26},
+	abstract = {coming soon.}
+}
+
 @inproceedings{graf_vmscape_2026,
 	title = {{VMScape: Exposing and Exploiting Incomplete Branch Predictor Isolation in Cloud Environments}},
     pdf = {https://comsec-files.ethz.ch/papers/vmscape_sp26.pdf},
@@ -9,16 +19,6 @@
     abbr = {S\&P'26},
 	annotation = {* Equal contribution first-authors},
     abstract = {Virtualization is a cornerstone of modern cloud infrastructures, providing the required isolation to customers. This isolation, however, is threatened by speculative execution attacks which the CPU vendors attempt to mitigate by extending the isolation to the branch predictor state. Our systematic analysis shows that this extension unfortunately is incomplete: while the most obvious case of the guest controlling branch prediction in the host has been addressed by existing hardware mitigations, we discover a number of new Spectre Branch Target Injection (Spectre-BTI) attack primitives on AMD Zen 1-5 and Intel Coffee Lake CPUs that, among others, enable a malicious guest to control indirect branch prediction in the host when it is executing in userspace. Using the aforementioned primitive, we craft VMScape, the first Spectre-BTI attack that enables a malicious KVM guest to leak arbitrary memory from an unmodified QEMU process running on an AMD Zen 4 host at the speed of 32 B/s, exposing cryptographic keys for disk encryption and decryption. Our analysis of possible mitigation strategies shows that it is possible to mitigate VMScape by selectively flushing the branch predictor with minimal performance impact in common scenarios.}
-}
-
-@inproceedings{niederer_glasswall_2026,
-	title = {{Glasswall: Enforcing User-Defined Data Usage Policies in Functions as a Service}}, 
-	booktitle = {{Proceedings of 23rd Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA 2026)}},
-	author = {Niederer, Silvan and Hajiabadi, Ali and Razavi, Kaveh},
-	month = jul,
-	year = {2026},
-	abbr = {DIMVA'26},
-	abstract = {coming soon.}
 }
 
 @inproceedings{taneja_mirza_2026,
