@@ -37,8 +37,8 @@ You can find my CV <a href="https://ahajiabadi.github.io/assets/pdf/Ali_Hajiabad
       <li>MICRO: 2026, 2025</li>
       <li>ISCA: 2026</li>
       <li>HPCA: 2026</li>
-      <li>EuroS&amp;P 2026</li>
-      <li>AsiaCCS 2026</li>
+      <li>EuroS&amp;P: 2026</li>
+      <li>AsiaCCS: 2026</li>
     </ul>
   </li>
   <li><strong>Sub-reviewer</strong>: USENIX Security ('25)</li>
