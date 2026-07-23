@@ -6,7 +6,7 @@ subtitle: Postdoctoral Researcher and Lecturer at ETH Zurich
 
 profile:
   align: right
-  image: image-ali-cropped.png
+  image: image-ali-new.png
   image_circular: true # crops the image to make it circular
 
 news: true # includes a list of news items
