@@ -35,9 +35,9 @@ You can find my CV <a href="https://ahajiabadi.github.io/assets/pdf/Ali_Hajiabad
     <ul>
       <li>S&amp;P: 2027</li>
       <li>uASC: 2027, 2026</li>
+      <li>HPCA: 2027, 2026</li>
       <li>MICRO: 2026, 2025</li>
       <li>ISCA: 2026</li>
-      <li>HPCA: 2026</li>
       <li>EuroS&amp;P: 2026</li>
       <li>AsiaCCS: 2026</li>
     </ul>
