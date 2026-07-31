@@ -1,3 +1,16 @@
+@inproceedings{hajiabadi_veriprac_2026,
+	title = {{VeriPRAC: Verifiable Formal Contracts for Secure Per Row Activation Counting}},
+	pdf = {https://comsec-files.ethz.ch/papers/veriprac_ccs26.pdf},
+	booktitle = {{Proceedings of 33rd Conference on Computer and Communications Security (CCS 2026)}},
+	author = {Hajiabadi, Ali and Niederer, Silvan and Razavi, Kaveh},
+    code = {https://github.com/comsec-group/veriprac},
+	month = nov,
+	year = {2026},
+	abbr = {CCS'26},
+    selected={true},
+	abstract = {Rowhammer remains a major security concern for modern DRAM, yet no deterministic solution exists in commercial devices. The latest JEDEC specification introduces Per Row Activation Counting (PRAC) to provide a principled framework for secure in-DRAM mitigation. Since the introduction of PRAC, a number of mitigations have been proposed based on PRAC. However, these proposals only provide ad hoc security analyses without necessarily considering the worst-case scenarios. In this work, we define PRAC contracts that provide formal bounds for a generic set of mechanisms in a PRAC mitigation. Our key insight is that these generic mechanisms introduce gaps in tracking accesses to DRAM, making it possible for an attacker to craft a variety of strategies that silently survive the mitigation actions performed by PRAC. Using these silent survival strategies, we then construct EchoTrail, a provably optimal attack structure against PRAC contracts. Leveraging EchoTrail, we then develop VeriPRAC, an automatic contract verification tool that checks a given PRAC-based mitigation against its intended PRAC contract. VeriPRAC finds that all state-of-the-art mitigations violate their intended contract, and in one case, an aggressor can reach up to 7.5k activations despite the intended bound of the contract being only 99.}
+}
+
 @inproceedings{niederer_glasswall_2026,
 	title = {{Glasswall: Enforcing User-Defined Data Usage Policies in Functions as a Service}}, 
     pdf = {https://comsec-files.ethz.ch/papers/glasswall_dimva26.pdf},
