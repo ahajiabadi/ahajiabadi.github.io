@@ -1,13 +1,15 @@
 @inproceedings{liu_compression_2027,
 	title = {{Compression: Impossible --- Securing Hardware-Level Memory Compression}},
-	pdf = {https://comsec-files.ethz.ch/papers/compression_asplos27.pdf},
+	pdf = {https://comsec-files.ethz.ch/papers/compression_impossible_asplos2027.pdf},
 	booktitle = {{Proceedings of 32nd International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2027)}},
-	author = {Liu, Chenfei and Hajiabadi, Ali and Razavi, Kaveh},
+	author = {Liu*, Chenfei and Hajiabadi*, Ali and Razavi, Kaveh},
+	annotation = {* Equal contribution first-authors},
+	award = {Artifacts Evaluated---Reusable badge},
 	month = apr,
 	year = {2027},
 	abbr = {ASPLOS'27},
     selected={true},
-	abstract = {coming soon.}
+	abstract = {Transparent hardware-level memory compression has become increasingly attractive for commercial deployment, particularly in hyperscalers and cloud infrastructures. While it is well known that compression can introduce data-dependent leaks, as the compressibility of data inherently depends on its content, a common intuition is that such leaks can be mitigated using constant-time compression algorithms. Unfortunately, as we show in this paper, despite constant-time compression algorithms, all existing designs suffer from information leakage vulnerabilities due to inherently-insecure architectural design decisions. We develop several novel leakage primitives that exploit the fundamental design aspects shared across existing proposals. Relying on these leakage primitives, we show secret-dependent behaviors in widelyused cryptographic libraries and construct an end-to-end attack that leaks passwords from a popular web server. To secure memory compression against these serious vulnerabilities, we introduce a new compression non-interference property and prove that a compression system that adheres to this property does not introduce any leakage primitives. We then demonstrate that practical and secure memory compression is achievable by designing a new secure memory compression system called ZipLock. Our evaluation shows that compared to the insecure state-of-the-art baseline, ZipLock incurs only 3.5% performance overhead while providing a similar compression rate of 1.65x.}
 }
 
 @inproceedings{hajiabadi_veriprac_2026,
