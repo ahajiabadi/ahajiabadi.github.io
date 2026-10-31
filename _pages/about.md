@@ -15,9 +15,11 @@ social: true # includes social icons at the bottom of the page
 ---
 
 I am a postdoctoral researcher in the <a href="https://comsec.ethz.ch/">Computer Security Group</a> at ETH Zurich, led by <a href="https://comsec.ethz.ch/people/kaveh-razavi/">Prof. Kaveh Razavi</a>. I also teach Computer Security and Computer Engineering in the <a href="https://www.ee.ethz.ch/">D-ITET</a> at ETH Zurich.
-I completed my PhD at the National University of Singapore (NUS), where I was advised by <a href="https://www.comp.nus.edu.sg/~tcarlson/">Prof. Trevor E. Carlson</a>. My PhD thesis explored innovative solutions for building efficient and secure processors through hardware/software co-design. My current research has expanded into broader areas of hardware security, including DRAM read-disturbance vulnerabilities and the formal security analysis of existing and future hardware designs and systems.
+I received my PhD in Computer Science from the National University of Singapore (NUS), advised by <a href="https://www.comp.nus.edu.sg/~tcarlson/">Prof. Trevor E. Carlson</a>, where I researched secure and efficient processors through hardware/software co-design.
 
-My research has been recognized and supported by the School of Computing CS PhD Thesis Award (Honorable Mention), Dean's Graduate Research Excellence Award, 61st DAC Best Paper Award nomination, President's Graduate Fellowship (2019-2023), NUSGS Research Incentive Award, and Research Achievement Award.
+My research focuses on **securing computing systems across hardware and software boundaries**. I uncover hidden attack surfaces in real systems, formalize the security contracts that system components must uphold, and develop efficient mechanisms to enforce them. Combining systems security, formal methods, and computer architecture, I investigate security challenges in existing and emerging computing systems and develop practical solutions that preserve both security and efficiency.
+
+My research and service has been recognized by 61st DAC Best Paper Award nomination, the School of Computing CS PhD Thesis Award (Honorable Mention), Dean's Graduate Research Excellence Award, President's Graduate Fellowship (2019-2023), EuroS&amp;P'26 Noteworthy Reviewer, NUSGS Research Incentive Award, and Research Achievement Award.
 
 You can find my CV <a href="https://ahajiabadi.github.io/assets/pdf/Ali_Hajiabadi_CV.pdf">here</a>.
 
