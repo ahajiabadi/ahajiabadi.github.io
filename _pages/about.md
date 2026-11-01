@@ -15,7 +15,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 I am a postdoctoral researcher in the <a href="https://comsec.ethz.ch/">Computer Security Group</a> at ETH Zurich, led by <a href="https://comsec.ethz.ch/people/kaveh-razavi/">Prof. Kaveh Razavi</a>. I also teach Computer Security and Computer Engineering in the <a href="https://www.ee.ethz.ch/">D-ITET</a> at ETH Zurich.
-I received my PhD in Computer Science from the National University of Singapore (NUS), advised by <a href="https://www.comp.nus.edu.sg/~tcarlson/">Prof. Trevor E. Carlson</a>, where I researched secure and efficient processors through hardware/software co-design.
+I received my PhD in Computer Science from the National University of Singapore (NUS), advised by <a href="https://www.comp.nus.edu.sg/~tcarlson/">Prof. Trevor E. Carlson</a>.
 
 My research focuses on **securing computing systems across hardware and software boundaries**. I uncover hidden attack surfaces in real systems, formalize the security contracts that system components must uphold, and develop efficient mechanisms to enforce them. Combining systems security, formal methods, and computer architecture, I investigate security challenges in existing and emerging computing systems and develop practical solutions that preserve both security and efficiency.
 
@@ -36,11 +36,11 @@ You can find my CV <a href="https://ahajiabadi.github.io/assets/pdf/Ali_Hajiabad
     <strong>Program Committee</strong>
     <ul>
       <li>S&amp;P: 2027</li>
+      <li>ISCA: 2027, 2026</li>
       <li>uASC: 2027, 2026</li>
       <li>HPCA: 2027, 2026</li>
       <li>EuroS&amp;P: 2027, 2026</li>
       <li>MICRO: 2026, 2025</li>
-      <li>ISCA: 2026</li>
       <li>AsiaCCS: 2026</li>
     </ul>
   </li>
