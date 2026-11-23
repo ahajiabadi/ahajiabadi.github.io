@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-VeriPRAC received the <strong>Distinguished Artifact Award<\strong> from CCS 2026.
+VeriPRAC received the <strong>Distinguished Artifact Award</strong> from CCS 2026.
