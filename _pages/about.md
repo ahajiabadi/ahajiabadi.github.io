@@ -19,7 +19,7 @@ I received my PhD in Computer Science from the National University of Singapore 
 
 My research focuses on **securing computing systems across hardware and software boundaries**. I uncover hidden attack surfaces in real systems, formalize the security contracts that system components must uphold, and develop efficient mechanisms to enforce them. Combining systems security, formal methods, and computer architecture, I investigate security challenges in existing and emerging computing systems and develop practical solutions that preserve both security and efficiency.
 
-My research and service has been recognized by 61st DAC Best Paper Award nomination, the School of Computing CS PhD Thesis Award (Honorable Mention), Dean's Graduate Research Excellence Award, President's Graduate Fellowship (2019-2023), EuroS&amp;P'26 Noteworthy Reviewer, NUSGS Research Incentive Award, and Research Achievement Award.
+My research and service has been recognized by 61st DAC Best Paper Award nomination, CCS'26 Distinguished Artifact Award, the School of Computing CS PhD Thesis Award (Honorable Mention), Dean's Graduate Research Excellence Award, President's Graduate Fellowship (2019-2023), EuroS&amp;P'26 Noteworthy Reviewer, NUSGS Research Incentive Award, and Research Achievement Award.
 
 You can find my CV <a href="https://ahajiabadi.github.io/assets/pdf/Ali_Hajiabadi_CV.pdf">here</a>.
 
